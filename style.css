@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --yellow-color: #fabd2e;
+    --spacing: 1rem;
+    --gray-color: #b1aeae;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+}
+
+.col-5 {
+    flex-basis: 41.66%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+}
+
+.col-11 {
+    flex-basis: 91.66%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+.col-3-md {
+    flex-basis: 20%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.padding-left-right {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-baseline {
+    justify-content: baseline;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding: 6rem 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.container {
+    width: 90%;
+    /* min-width: 1200px; */
+    margin: auto;
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+
+.travel {
+    position: relative;
+    background-image: url(../image/The-amazing-Fira-of-Santorini.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    height: 100vh;
+}
+
+.travel::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 0;
+}
+
+
+.logo {
+    width: 160px;
+    padding: 1.5rem 0;
+    position: sticky;
+
+}
+
+.menu {
+    margin-left: auto;
+    position: sticky;
+}
+
+.menu li {
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+
+.menu li a {
+    color: white;
+}
+
+.exploring-title {
+    margin-top: calc(var(--spacing)*4);
+    position: sticky;
+}
+
+.exploring-title p,
+h1 {
+    color: white;
+}
+
+.exploring-title h1 {
+    font-size: 4rem;
+}
+
+.exploring-title p {
+    padding-top: var(--spacing);
+}
+
+.border {
+    border-left: 1px solid rgb(235, 232, 232);
+    height: 110px;
+}
+
+.view {
+    padding: 15px 35px;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    margin-top: calc(var(--spacing)*3);
+}
+
+
+.information-content {
+    margin-top: calc(var(--spacing)*2);
+    padding-bottom: 6rem;
+
+}
+
+.information-content h3 {
+    padding-top: calc(var(--spacing)/2);
+    font-size: 1.5rem;
+    padding-bottom: calc(var(--spacing)/2);
+}
+
+.information-content p {
+    line-height: 1.2;
+    color: var(--gray-color);
+}
+
+.information-image {
+    width: 70px;
+}
+
+.beach-title {
+    padding-left: calc(var(--spacing)*1.5);
+    padding-right: calc(var(--spacing)*1.5);
+    padding-bottom: calc(var(--spacing)*1.5);
+    background-color: #e2dfdf;
+
+}
+
+.beach-title p {
+    line-height: 2;
+
+}
+
+.beach-title h2 {
+    margin-top: calc(var(--spacing)*5);
+    font-size: 2rem;
+    margin-bottom: var(--spacing);
+
+}
+
+.beach-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.popular-title h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing);
+}
+
+.popular-title p {
+    letter-spacing: 1px;
+    color: #5a5757;
+}
+
+.popular-image img {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: var(--spacing);
+}
+
+.amsterdam {
+    background-image: url(../image/amsterdam-1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-top: var(--spacing);
+}
+
+.amsterdam-title h3 {
+    font-size: 2rem;
+    color: white;
+    padding: calc(var(--spacing)*3.5) 0 0 0;
+    margin-bottom: calc(var(--spacing)*.7);
+}
+
+.amsterdam-title p {
+    color: white;
+    line-height: 1.5;
+}
+
+.search {
+    height: 300px;
+    background-color: var(--yellow-color);
+}
+
+.search-title h3 {
+    padding-top: calc(var(--spacing)*2.5);
+    padding-bottom: var(--spacing);
+}
+
+.find input {
+    width: 100%;
+    padding: var(--spacing) 0;
+    border: none;
+}
+
+#deals {
+    background-image: url(../image/Bed-2x.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+}
+
+
+.arriving {
+    background-color: white;
+    margin-top: var(--spacing);
+    border-radius: 1px;
+    padding: 5px 0;
+
+
+}
+
+.arriving-title {
+    color: rgb(28, 28, 149);
+    font-size: .7rem;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.arriving-date {
+    color: #1c1c95;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.border-left {
+    border-left: 3px solid #fabd2e;
+}
+
+.search-buttom {
+    background-color: #5d5de6;
+    color: white;
+    display: inline-block;
+    margin-top: calc(var(--spacing)*1.5);
+    padding: 7px 23px;
+    border-radius: 5px;
+}
+
+.booking {
+    margin-left: auto;
+    color: #1c1c95;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.booking-blue {
+    color: #5d5de6;
+}
+
+.news {
+    background-color: #eeeded;
+    padding: 2rem 0;
+}
+
+.news-title p {
+    color: #292828;
+}
+
+.more-news {
+    margin-left: auto;
+}
+
+.more-news a {
+    background-color: #fabd2e;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: black;
+}
+
+.news-content {
+    background-color: white;
+    margin-top: calc(var(--spacing)*2);
+    height: 400px;
+}
+
+.news-content img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.news-content-title {
+    padding: calc(var(--spacing)*1.5);
+}
+
+.news-content-title p {
+    margin-bottom: 10px;
+    color: #b1aeae;
+    letter-spacing: 3px;
+    padding-top: var(--spacing);
+}
+
+.menu-bar {
+    padding: calc(var(--spacing)*3) 0;
+
+}
+
+.menu-bar li a {
+    color: black;
+    line-height: 1.5;
+    font-size: .9rem;
+}
+
+.first-line {
+    margin-bottom: var(--spacing);
+}
+
+.footer {
+    padding: calc(var(--spacing)*2);
+}
+
+.social {
+    margin-left: auto;
+}
+
+.social li {
+    width: 20px;
+    margin-right: var(--spacing);
+}
+
+/* For Mobile  */
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .exploring-title h1 {
+        text-align: center;
+    }
+
+    .view {
+        margin-top: var(--spacing);
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .information-content {
+        padding-bottom: 2rem;
+    }
+
+    .search-buttom {
+        display: block;
+        padding: 0px 0px;
+        margin-top: calc(var(--spacing)*.3);
+    }
+
+    .booking {
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    .more-news {
+        margin-left: 0;
+        margin-top: var(--spacing);
+    }
+
+    .menu-bar {
+        text-align: center;
+        padding: var(--spacing) 0;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    .social {
+        flex-direction: row;
+        margin: auto;
+        margin-top: var(--spacing);
+    }
+
+}
+
+/* For Large Phone and Portrait  */
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .col-6-md {
+        flex-basis: 50%;
+    }
+
+    .col-4-md {
+        flex-basis: 33.33%;
+    }
+
+    .col-12-l {
+        flex-basis: 100%;
+    }
+
+    .more-news {
+        margin-left: 0;
+        margin-top: var(--spacing);
+    }
+
+    .justify-cente-rs {
+        justify-content: center;
+    }
+
+    .social {
+        margin: auto;
+        margin-top: var(--spacing);
+
+    }
+}
+
+/* For Landscape and Tablets */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .col-12-l {
+        flex-basis: 100%;
+    }
+
+    .col-6-md {
+        flex-basis: 50%;
+    }
+
+    .more-news {
+        margin-left: 0;
+        margin-top: var(--spacing);
+    }
+
+    .news-content {
+        margin-top: var(--spacing);
+        margin-left: calc(var(--spacing)*2);
+    }
+}
+
+/* Large Devices such as Desktop */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .more-news {
+        margin-left: 0;
+    }
+
+    .news-content {
+        margin-top: calc(var(--spacing)*4);
+    }
+}
+
+/* Extra large For Large Resolutions */
+@media only screen and (min-width: 1200px) {}
